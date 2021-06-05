@@ -1,0 +1,24 @@
+{
+  "name": "quoality",
+  "version": "1.0.0",
+  "description": "quoality",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "karthik",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.8.0",
+    "assert": "^2.0.0",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.10.0",
+    "faker": "^5.4.0",
+    "find-process": "^1.4.4",
+    "helmet": "^4.4.1",
+    "mongodb": "^3.6.4"
+  }
+}
