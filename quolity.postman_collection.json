@@ -1,0 +1,370 @@
+{
+	"info": {
+		"_postman_id": "8f7da0ae-6326-4a7f-82a3-847f142a1146",
+		"name": "quolity",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "guests",
+			"item": [
+				{
+					"name": "guests ",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/guest?hotelId=!NochainAtkodiyoor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"guest"
+							],
+							"query": [
+								{
+									"key": "hotelId",
+									"value": "!NochainAtkodiyoor"
+								}
+							]
+						},
+						"description": "this api is used to fetch guests data of a given hotel"
+					},
+					"response": []
+				},
+				{
+					"name": "registerguest",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "hotelId",
+									"value": "!NochainAtkodiyoor",
+									"type": "text"
+								},
+								{
+									"key": "guestName",
+									"value": "Sham'sBahi",
+									"type": "text"
+								},
+								{
+									"key": "phoneNumber",
+									"value": "+919099876567",
+									"type": "text"
+								},
+								{
+									"key": "phoneCode",
+									"value": "+91",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/guest",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"guest"
+							]
+						},
+						"description": "This api is used to register a guest in a hotel"
+					},
+					"response": []
+				},
+				{
+					"name": "updateguest",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "hotelId",
+									"value": "!NochainAtkodiyoor",
+									"type": "text"
+								},
+								{
+									"key": "guestName",
+									"value": "Shamedited",
+									"type": "text"
+								},
+								{
+									"key": "phoneNumber",
+									"value": "+919099876567",
+									"type": "text"
+								},
+								{
+									"key": "phoneCode",
+									"value": "+91",
+									"type": "text"
+								},
+								{
+									"key": "guestId",
+									"value": "60bb11aebe2791220c8ff39f",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/guest",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"guest"
+							]
+						},
+						"description": "this api is used to update guest details"
+					},
+					"response": []
+				},
+				{
+					"name": "deleteguest",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "hotelId",
+									"value": "!NochainAtkodiyoor",
+									"type": "text"
+								},
+								{
+									"key": "guestId",
+									"value": "60bb13a8be2791220c8ff3a0",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/guest",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"guest"
+							]
+						},
+						"description": "this api is used to delete a guest from a hotel"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "services",
+			"item": [
+				{
+					"name": "services:port:3001",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "serviceName",
+									"value": "roomservice",
+									"type": "text"
+								},
+								{
+									"key": "serviceImage",
+									"value": "https://google.com",
+									"type": "text"
+								},
+								{
+									"key": "hotelId",
+									"value": "!NochainAtkodiyoor",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3001/service",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"service"
+							]
+						},
+						"description": "This is an api runnung on another microservice used to create service"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "phoneNumber",
+							"value": "+919898990980",
+							"type": "text"
+						},
+						{
+							"key": "hotelName",
+							"value": "diana",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "second@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "chainName",
+							"value": "diana",
+							"type": "text"
+						},
+						{
+							"key": "hotelPic",
+							"value": "https://google.com",
+							"type": "text"
+						},
+						{
+							"key": "coordinates",
+							"value": "13.5678,12.0123456789",
+							"type": "text"
+						},
+						{
+							"key": "phoneCode",
+							"value": "+91",
+							"type": "text"
+						},
+						{
+							"key": "ownerName",
+							"value": "sam",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"register"
+					]
+				},
+				"description": "api to register a hotel or a chain"
+			},
+			"response": []
+		},
+		{
+			"name": "getAllHotel",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/AllHotel?type=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"AllHotel"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "2"
+						}
+					]
+				},
+				"description": "This api is used to get the list of all hotels or chains"
+			},
+			"response": []
+		},
+		{
+			"name": "getByIdHotel",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/ByIdHotel?hotelId=!NochainAtkodiyoor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"ByIdHotel"
+					],
+					"query": [
+						{
+							"key": "hotelId",
+							"value": "!NochainAtkodiyoor"
+						}
+					]
+				},
+				"description": "Get hotels details by their ID"
+			},
+			"response": []
+		},
+		{
+			"name": "deleteHotel",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYWNjb3VudC5kZXYud3V2LndvcmxkXC9hcGlcL3YyXC9sb2dpbiIsImlhdCI6MTYxNjkzMTMxNywibmJmIjoxNjE2OTMxMzE3LCJqdGkiOiJRSjh6NnZ6c2UxR09YYloxIiwic3ViIjoyMDIwMTEwMTMsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.YcLUJXEGuop9cGSKql_gxPazX8oR7Ke3BrxFZFYOpZo",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/Hotel?hotelId=!dianaAtpizzas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Hotel"
+					],
+					"query": [
+						{
+							"key": "hotelId",
+							"value": "!dianaAtpizzas"
+						}
+					]
+				},
+				"description": "This api is used to delete a hotel or chain of hotels"
+			},
+			"response": []
+		}
+	]
+}
